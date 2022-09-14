@@ -8,15 +8,10 @@
  */
 int _islower(int c)
 {
-int i = 'a';
+	if (c >= 'a' && c <= 'z')
+		return (1);
 
-for (i = 'a'; i >= 'z'; i++)
-{
-/* refer int c*/
-if (c == 1)
-{
-return (1);
+	else
+		return (0);
 }
-}
-return (0);
-}
+
