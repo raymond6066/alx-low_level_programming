@@ -1,24 +1,26 @@
-#include <stdio.h>
-#include <unistd.h>
-/**
- * main - Entry point
- * Description: Print base 16 numbers
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	char c;
-	char d = '0';
+#include "main.h"
 
-	while (d <= '9')
+/**
+ * jack_bauer - prints time
+ *
+ * Description: prints a list of time
+ * Return: Always 0.
+ */
+
+void jack_bauer(void)
+{
+	int i, j;
+
+	for (i = 0; i < 24; i++)
 	{
-		putchar(d);
-		d++;
+		for (j = 0; j < 60; j++)
+		{
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
+		}
 	}
-	for (c = 'a'; c <= 'f'; c++)
-	{
-		putchar(c);
-	}
-	putchar('\n');
-	return (0);
 }
