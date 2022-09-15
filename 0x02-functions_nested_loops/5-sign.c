@@ -3,6 +3,7 @@
 /**
  * print_sign - Entry point
  * Description: prints the sign of number
+ * @n: The value to test
  * Return: 1 if n > 0, if n == 0, -1 if n < 0
  */
 
