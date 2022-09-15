@@ -2,12 +2,12 @@
 
 /**
  * _abs - computes the absolute value of a number
- * @i: Value to test
+ * @n: number to check
  *
  * Description: prints absolute value of integer i
- * Return: The absolute value of i.
+ * Return:0 or 1
  */
-int _abs(int i)
+int _abs(int n)
 {
-return (i < 0 ? -1 : i);
+return (n >= 0 ? n : n * -1);
 }
